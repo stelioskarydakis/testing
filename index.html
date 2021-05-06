@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.1/dist/chart.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="./js/modernizr-custom.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="inner">
+        <h1 class="heading">Em-Px</h1>
+        <div class="h11">Em: Stylianos</div>
+        <div class="h12">Px: Stylianos</div>
+      </div>
+    </div>
+
+    <div class="cardswebp">
+      <div class="card">
+        <div class="inner-card">
+          <picture>
+            <source srcset="./images/test.webp" type="image/webp" />
+            <source srcset="./images/testjpg.jpg" type="image/jpeg" />
+            <img src="./images/testjpg.jpg" alt="text" />
+          </picture>
+          <div class="text">Card with Webp 1</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="inner-card">
+          <picture>
+            <source srcset="./images/test.webp" type="image/webp" />
+            <source srcset="./images/testjpg.jpg" type="image/jpeg" />
+            <img src="./images/testjpg.jpg" alt="text" />
+          </picture>
+          <div class="text">Card with Webp 2</div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <h3>Plotly Fake Cy Population</h3>
+    <div class="plotly-chart-test">
+      <div id="plotlycy"></div>
+    </div>
+    <hr />
+    <h3>Plotly Random Numbers</h3>
+    <div class="plotly-chart-test">
+      <div id="plotlyrandom"></div>
+    </div>
+    <hr />
+    <h3>Chart js</h3>
+
+    <div class="bar-chart">
+      <canvas id="myChart" width="400" height="100"></canvas>
+    </div>
+    <hr />
+    <h3>Svg 1</h3>
+    <div class="svg-img">
+      <svg
+        width="800"
+        height="300"
+        viewBox="0 0 800 600"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g id="method-draw-image(1) 1" clip-path="url(#clip0)">
+          <g id="method-draw-image(2) 1">
+            <g id="Layer 1">
+              <g id="main">
+                <path
+                  id="svg 1"
+                  d="M199.219 304.096H162.822V342.4H151.384V255.666H205.116V265.078H162.822V294.744H199.219V304.096Z"
+                  fill="#FF0000"
+                />
+                <path
+                  id="svg_3"
+                  d="M309.005 309.845V343.8H297.567V257.066H329.557C339.048 257.066 346.475 259.488 351.836 264.333C357.237 269.178 359.937 275.592 359.937 283.574C359.937 291.994 357.297 298.487 352.015 303.054C346.772 307.581 339.247 309.845 329.437 309.845H309.005ZM309.005 300.492H329.557C335.673 300.492 340.359 299.063 343.615 296.203C346.872 293.304 348.5 289.134 348.5 283.694C348.5 278.531 346.872 274.401 343.615 271.303C340.359 268.205 335.891 266.597 330.212 266.478H309.005V300.492ZM403.96 289.234C402.292 288.956 400.485 288.817 398.539 288.817C391.311 288.817 386.407 291.894 383.825 298.05V343.8H372.805V279.345H383.527L383.706 286.791C387.32 281.033 392.443 278.154 399.075 278.154C401.22 278.154 402.848 278.432 403.96 278.988V289.234Z"
+                  fill="#FF0000"
+                />
+              </g>
+              <g id="X">
+                <path
+                  id="svg_2"
+                  d="M250.464 302.875L264.761 279.345H277.628L256.54 311.215L278.283 343.8H265.535L250.643 319.674L235.75 343.8H222.942L244.686 311.215L223.598 279.345H236.346L250.464 302.875Z"
+                  fill="#FF0000"
+                />
+              </g>
+              <g id="O">
+                <path
+                  id="svg_4"
+                  d="M423.921 310.977C423.921 304.662 425.152 298.983 427.614 293.94C430.116 288.896 433.571 285.004 437.979 282.264C442.427 279.524 447.491 278.154 453.17 278.154C461.947 278.154 469.035 281.192 474.437 287.268C479.877 293.344 482.598 301.426 482.598 311.513V312.287C482.598 318.562 481.386 324.201 478.964 329.205C476.581 334.169 473.146 338.042 468.658 340.821C464.21 343.601 459.087 344.991 453.289 344.991C444.552 344.991 437.463 341.953 432.022 335.877C426.621 329.801 423.921 321.759 423.921 311.751V310.977ZM435.001 312.287C435.001 319.436 436.649 325.174 439.945 329.503C443.281 333.832 447.729 335.996 453.289 335.996C458.889 335.996 463.337 333.812 466.633 329.444C469.929 325.035 471.577 318.88 471.577 310.977C471.577 303.908 469.889 298.189 466.514 293.821C463.178 289.412 458.73 287.208 453.17 287.208C447.729 287.208 443.341 289.373 440.005 293.701C436.669 298.03 435.001 304.225 435.001 312.287Z"
+                  fill="#FF0000"
+                />
+              </g>
+            </g>
+          </g>
+        </g>
+        <defs>
+          <clipPath id="clip0">
+            <rect width="800" height="600" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+
+    <script type="text/javascript" src="./js/plotlycy.js"></script>
+    <script type="text/javascript" src="./js/plotlyrandom.js"></script>
+    <script type="text/javascript" src="./js/chartjs.js"></script>
+    <script type="text/javascript" src="./js/app.js"></script>
+  </body>
+</html>

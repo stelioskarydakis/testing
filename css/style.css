@@ -102,6 +102,13 @@ hr {
   transform-origin: center;
   transform-box: fill-box;
 }
+.github-link {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.github-link a {
+  color: #000;
+}
 @keyframes rotate {
   from {
     transform: rotateZ(0deg);
